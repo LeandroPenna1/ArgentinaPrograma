@@ -1,28 +1,57 @@
 const readlineSync = require('readline-sync');
 let numeroMes = readlineSync.question("Ingresa un numero:\n");
 
-if(numeroMes == 1){
-    console.log("La cantidad de dias del mes de Enero es 31")
-} else if(numeroMes == 2){
-    console.log("La cantidad de dias del mes de Febrero es 28")
-} else if(numeroMes == 3){
-    console.log("La cantidad de dias del mes de Marzo es 31")
-} else if(numeroMes == 4){
-    console.log("La cantidad de dias del mes de Abril es 30")
-} else if(numeroMes == 5){
-    console.log("La cantidad de dias del mes de Mayo es 31")
-} else if(numeroMes == 6){
-    console.log("La cantidad de dias del mes de Junio es 30")
-} else if(numeroMes == 7){
-    console.log("La cantidad de dias del mes de Julio es 31")
-} else if(numeroMes == 8){
-    console.log("La cantidad de dias del mes de Agosto es 31")
-} else if(numeroMes === 9){
-    console.log("La cantidad de dias del mes de Septiembre es 30")
-} else if(numeroMes == 10){
-    console.log("La cantidad de dias del mes de Octubre es 31")
-} else if(numeroMes == 11){
-    console.log("La cantidad de dias del mes de Noviembre es 30")
-} else if(numeroMes == 12){
-    console.log("La cantidad de dias del mes de Diciembre es 31")
-}
+switch(numeroMes) {
+    case "1": 
+       mes = "Enero";
+       dias = "31";
+    break;
+    case "2": 
+       mes = "Febrero";
+       dias = "28";
+    break;
+    case "3":
+        mes = "Marzo";
+        dias = "31";
+    break;
+    case "4": 
+         mes = "Abril";
+       dias = "30";
+    break;
+    case "5": 
+        mes = "Mayo";
+        dias = "31";
+    break;
+    case "6": 
+         mes = "Junio";
+         dias = "30";
+    break;
+    case "7": 
+         mes = "Julio";
+         dias = "31";
+    break;
+    case "8": 
+         mes = "Agosto";
+         dias = "31";
+    break;
+    case "9": 
+         mes = "Septiembre";
+         dias = "30";
+    break;
+    case "10": 
+         mes = "Octubre";
+         dias = "31";
+    break;
+    case "11": 
+         mes = "Noviembre";
+         dias = "30";
+    break;
+    case "12": 
+         mes = "Diciembre";
+         dias = "31";
+    break;
+    default:
+        console.log("Los meses son 12");
+    break;
+    }
+    console.log("La cantidad de dias del mes de " + mes + " es "+ dias + " dias")
